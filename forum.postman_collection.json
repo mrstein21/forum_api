@@ -1,0 +1,599 @@
+{
+	"info": {
+		"_postman_id": "c68d4290-03c7-4f7a-88f0-2a84c1b933e7",
+		"name": "forum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "mohammadrangga27@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Mohammad Rangga",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "giorno95",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "Request login menggunakan x-formurlencode dan json "
+			},
+			"response": [
+				{
+					"name": "Contoh response api request Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "mohammadrangga27@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Mohammad Rangga",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "giorno95",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Origin, Content-Type, access_token,Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "302"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12e-LYXR4LwIeKdI65+Ksa/rdEO2vsw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 13:35:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"email\": \"mohammadrangga27@gmail.com\",\n        \"name\": \"Mohammad Rangga\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJtb2hhbW1hZHJhbmdnYTI3QGdtYWlsLmNvbSIsIm5hbWUiOiJNb2hhbW1hZCBSYW5nZ2EiLCJpYXQiOjE2MjQwMjMzMjd9._KhvUk_FRRiuJSihE_qZZq5p7S0EmEvOGWKnVAOvB8w\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "julindaputra@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Julianda Putra A",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "giorno95",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				},
+				"description": "Request register menggunakan x-formurlencode dan json"
+			},
+			"response": [
+				{
+					"name": "contoh response API Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "julindaputra@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Julianda Putra A",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "giorno95",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Origin, Content-Type, access_token,Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "295"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"127-78tIggauv2WFrZRwra/eJL0UwVk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 13:38:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"Julianda Putra A\",\n        \"email\": \"julindaputra@gmail.com\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6Ikp1bGlhbmRhIFB1dHJhIEEiLCJlbWFpbCI6Imp1bGluZGFwdXRyYUBnbWFpbC5jb20iLCJpYXQiOjE2MjQwMjM1MDJ9.On5JBdgn7uv2EJeTilT1wOmHhfbmrh4OyI4MXlWdS70\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Request List Pertanyaan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/forum/question",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forum",
+						"question"
+					]
+				},
+				"description": "ini adalah request list pertanyaan dari semua user"
+			},
+			"response": [
+				{
+					"name": "contoh response dari Request List Pertanyaan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/forum/question",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"forum",
+								"question"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Origin, Content-Type, access_token,Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1603"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"643-cJC+ULWuqzzVZDt0ALnZpCHNUNU\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 13:40:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 12,\n            \"title\": \"Hello its is me youre looking for???? <br><br>\",\n            \"date\": \"2021-06-17T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 2\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Test kembali<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 4\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Zefyr Quick Start<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Test lagi<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 9,\n            \"title\": \"Zefyr Quick Start test lagu<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 11,\n            \"title\": \"Zefyr Quick Start testkus<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Mengapa Komunis runtuh? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 3\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Apakah Komunis tak bertuhan? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 5\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Apakah Stalin dibenci di Rusia? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 3\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Apakah yang dimaksud dengan glasnost dan perestroika? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Apa saja kekejaman PKI? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 1,\n            \"title\": \"Apakah Jerman kalah pada Perang Dunia ke 2 ?\",\n            \"date\": \"2021-05-31T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 7\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Contoh Request Jawaban dari Pertanyaan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/forum/question/answer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forum",
+						"question",
+						"answer",
+						"1"
+					]
+				},
+				"description": "question/answer/id_question\n\nid_question diambil dari id yang ada di API daftar pertayaan\n\ncontoh /question/answer/2\n"
+			},
+			"response": [
+				{
+					"name": "Contoh Response dari Request Jawaban dari Pertanyaan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/forum/question/answer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"forum",
+								"question",
+								"answer",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Origin, Content-Type, access_token,Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "837"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"345-jnzIZdWXlQ/hR8ePetMwtrE4cmQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 13:41:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 18,\n            \"answer\": \"Test man gZefyr Quick Start<br><br>\",\n            \"date\": \"2021-06-17T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 1,\n            \"answer\": \"Yess karena hitler terlalu egois dan keras kepala<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 2,\n            \"answer\": \"Yess karena hitler juga tolol wkwkwkw<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 3,\n            \"answer\": \"Zefyr Quick Start<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 10,\n            \"answer\": \"Test lagi song..... <br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 11,\n            \"answer\": \"Hitler tolol<br><br><br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        },\n        {\n            \"id\": 12,\n            \"answer\": \"Test Zefyr Quick Start<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Daftar List Pertanyaan berdasarkan user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/forum/question",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"forum",
+						"question"
+					]
+				},
+				"description": "Daftar List Pertanyaan berdasarkan user\nparameternya cukup user_id saja\n\nrequestnya dalam bentuk formurlencode dan json"
+			},
+			"response": [
+				{
+					"name": "contoh response  dari Daftar List Pertanyaan berdasarkan user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Ik1vaGFtbWFkIFJhbmdnYSIsImVtYWlsIjoibW9oYW1tYWRyYW5nZ2EyN0BnbWFpbC5jb20iLCJpYXQiOjE2MjMzMDgyNjh9.eR14bU-JevyFyhwGzyaU0aiiAA94AIWwpJwawGo_p44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/forum/question",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"forum",
+								"question"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, PUT, POST, DELETE, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Accept, Origin, Content-Type, access_token,Authorization"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1603"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"643-CW7j0cOcBJ//hECOElFq2lT2eTM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 18 Jun 2021 13:44:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Apakah Jerman kalah pada Perang Dunia ke 2 ?\",\n            \"date\": \"2021-05-31T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 7\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Apakah Komunis tak bertuhan? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 5\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Mengapa Komunis runtuh? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 3\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Apakah Stalin dibenci di Rusia? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 3\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Apakah yang dimaksud dengan glasnost dan perestroika? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Apa saja kekejaman PKI? <br><br>\",\n            \"date\": \"2021-06-12T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Zefyr Quick Start<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Test lagi<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 9,\n            \"title\": \"Zefyr Quick Start test lagu<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Test kembali<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 4\n        },\n        {\n            \"id\": 11,\n            \"title\": \"Zefyr Quick Start testkus<br><br>\",\n            \"date\": \"2021-06-13T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 0\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Hello its is me youre looking for???? <br><br>\",\n            \"date\": \"2021-06-17T17:00:00.000Z\",\n            \"name\": \"Mohammad Rangga\",\n            \"total_answer\": 2\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
