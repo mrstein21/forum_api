@@ -1,9 +1,8 @@
 FROM node:alpine
 
-
 RUN mkdir /app
 ADD . /app
-WORKDIR /app
+WORKDIR /apps
 
 RUN npm update
-CMD npm start
+CMD npm run
