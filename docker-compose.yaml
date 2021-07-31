@@ -7,7 +7,7 @@ services:
     volumes:
       - myqsl_data:/var/lib/mysql
     environtment:
-      - MYSQL_ROOT_PASSWORD:jayaswara    
+      - MYSQL_ROOT_PASSWORD=jayaswara    
     restart:
       always
     networks:
