@@ -6,7 +6,7 @@ services:
     hostname: mysqldb
     volumes:
       - myqsl_data:/var/lib/mysql
-    environtment:
+    environment:
       - MYSQL_ROOT_PASSWORD=jayaswara    
     restart:
       always
