@@ -29,9 +29,7 @@ jobs:
            script: |
             cd forum_api
             git pull origin master
-            npm install --only=prod
-            docker-compose down
-            docker-compose up -d
+            docker-compose up --build -d app
             docker image prune -f
       #       git status
       #       npm install --only=prod
